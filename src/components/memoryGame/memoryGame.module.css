@@ -1,0 +1,16 @@
+.container{
+  padding: 1rem;
+ 
+}
+.subcontainer{
+  max-width: 600px;
+  margin: 0 auto;  
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: white;
+ 
+ }
