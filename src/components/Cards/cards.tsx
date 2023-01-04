@@ -3,15 +3,17 @@ import style from './cards.module.css'
 interface ICards {
   idPar: number;
   image: string;
+  id: number;
 }
 
-export const Cards = ({idPar, image}: any) => {
+export const Cards = ({ id, idDoPar, imagem }: any) => {
   return (
-    <div className="carta__conteudo">
-      <div className="carta__frente"></div>
+    <button className={style.carta} > 
+    <div className={style.carta__conteudo} ></div>
+      <div className={style.carta__frente}> </div>
       <div className={style.carta__costas}>
-        <img src={image} alt={`Carta numero ${idPar}`} />
+      <img src={imagem} alt={`Carta numero ${idDoPar}`} />
       </div>
-    </div>
+    </button>
   )
 }
