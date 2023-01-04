@@ -1,16 +1,20 @@
-.container{
+.jogo{
   padding: 1rem;
- 
 }
-.subcontainer{
+.conteudo{
   max-width: 600px;
   margin: 0 auto;  
 }
-
-.cards{
+.h1{
+  display: flex;
+  justify-content:center;
+}
+.cartas{  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  background-color: white;
- 
- }
+  
+}
+.cartas img {
+  width:100%;
+}

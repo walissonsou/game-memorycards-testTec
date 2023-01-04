@@ -1,3 +1,50 @@
-.carta__costas{
+.carta {
   aspect-ratio: 3/4;
+  max-width: 100%;
+  perspective: 1000px;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+ 
+}
+.carta img {
+  width: 100%;
+}
+
+.carta__conteudo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.carta__frente,
+.carta__costas {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
+}
+
+.carta__frente {
+  background-color: #bbb;  
+  background-size: 100%;
+  background-position: center;
+}
+
+
+.carta__costas {
+  transform: rotateY(180deg);
 }
